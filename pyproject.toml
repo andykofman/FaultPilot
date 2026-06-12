@@ -1,0 +1,31 @@
+[project]
+name = "faultpilot"
+version = "0.1.0"
+description = "Fault injection and behavior characterization for autopilots (ArduPilot SITL + Gazebo)"
+readme = "README.md"
+license = { file = "LICENSE" }
+requires-python = ">=3.10"
+keywords = [
+    "fault-injection",
+    "ardupilot",
+    "gazebo",
+    "sitl",
+    "uav",
+    "simulation",
+    "testing",
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+    "Programming Language :: Python :: 3.10",
+    "Topic :: Scientific/Engineering",
+    "Topic :: Software Development :: Testing",
+]
+
+[project.scripts]
+faultpilot = "faultpilot.cli.run:main"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]

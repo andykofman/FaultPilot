@@ -1,0 +1,32 @@
+# Runtime output (raw simulation artifacts never enter git)
+var/
+**/*.BIN
+**/*.bin
+**/*.tlog
+**/*.tlog.raw
+**/runs/
+**/*_sitl_state/
+
+# Local-only overlays and machine state
+.private/
+*.local
+*.local.parm
+
+# External dependencies and build outputs
+third_party/ardupilot/
+third_party/ardupilot_gazebo/
+third_party/SITL_Models/
+build/
+install/
+env/
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+*.egg-info/
+dist/
+
+# Editor / OS
+.vscode/
+.idea/
+.DS_Store

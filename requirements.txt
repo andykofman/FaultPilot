@@ -1,0 +1,12 @@
+pymavlink
+questionary
+MAVProxy
+pexpect
+empy==3.3.4
+dronecan
+setuptools
+future
+opencv-python-headless
+matplotlib
+numpy
+pytest

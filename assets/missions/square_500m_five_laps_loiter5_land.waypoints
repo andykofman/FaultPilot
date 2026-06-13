@@ -1,0 +1,98 @@
+QGC WPL 110
+# ============================================================================
+# SQUARE 500m x 500m | 5 LAPS | LOITER 5 TURNS | LAND
+#
+# Mission intent:
+#   1) Take off and climb to 100m AGL toward the south-east corner
+#   2) Fly to an explicit square-entry waypoint at the south-east corner
+#   3) Fly a 500m x 500m square five complete times
+#   4) Return to home and loiter for 5 turns with 100m radius
+#   5) Transition into a simple landing sequence and land at home
+#
+# Home / reference:
+#   - Home: lat=-35.3632620, lon=149.1652370, alt=584.00
+#   - Square uses home as the SOUTH-WEST corner so takeoff remains eastbound
+#
+# Square corners:
+#   - SW/Home : lat=-35.3632620, lon=149.1652370
+#   - SE      : lat=-35.3632620, lon=149.1707448
+#   - NE      : lat=-35.3587704, lon=149.1707448
+#   - NW      : lat=-35.3587704, lon=149.1652370
+#
+# Loiter:
+#   - MAV_CMD_NAV_LOITER_TURNS (18)
+#   - 5 turns
+#   - 100m radius clockwise
+#
+# Landing:
+#   - DO_LAND_START marker
+#   - LOITER_TO_ALT farther south, down to 10m
+#   - Three step-down waypoints (4m -> 2m -> 1m)
+#   - LAND at home
+# ============================================================================
+
+# Home
+0	1	0	16	0	0	0	0	-35.3632620	149.1652370	584.00	1
+
+# WP1: TAKEOFF eastbound toward the south-east corner, climb to 100m AGL
+1	0	3	22	15.0	0	0	0	-35.3632620	149.1707448	100.00	1
+
+# WP2: Explicit square-entry waypoint at the south-east corner
+2	0	3	16	0	0	0	0	-35.3632620	149.1707448	100.00	1
+
+# === SQUARE LAP 1 ===
+# WP3: North-east corner
+3	0	3	16	0	0	0	0	-35.3587704	149.1707448	100.00	1
+# WP4: North-west corner
+4	0	3	16	0	0	0	0	-35.3587704	149.1652370	100.00	1
+# WP5: South-west corner / home
+5	0	3	16	0	0	0	0	-35.3632620	149.1652370	100.00	1
+# WP6: South-east corner
+6	0	3	16	0	0	0	0	-35.3632620	149.1707448	100.00	1
+
+# === SQUARE LAP 2 ===
+7	0	3	16	0	0	0	0	-35.3587704	149.1707448	100.00	1
+8	0	3	16	0	0	0	0	-35.3587704	149.1652370	100.00	1
+9	0	3	16	0	0	0	0	-35.3632620	149.1652370	100.00	1
+10	0	3	16	0	0	0	0	-35.3632620	149.1707448	100.00	1
+
+# === SQUARE LAP 3 ===
+11	0	3	16	0	0	0	0	-35.3587704	149.1707448	100.00	1
+12	0	3	16	0	0	0	0	-35.3587704	149.1652370	100.00	1
+13	0	3	16	0	0	0	0	-35.3632620	149.1652370	100.00	1
+14	0	3	16	0	0	0	0	-35.3632620	149.1707448	100.00	1
+
+# === SQUARE LAP 4 ===
+15	0	3	16	0	0	0	0	-35.3587704	149.1707448	100.00	1
+16	0	3	16	0	0	0	0	-35.3587704	149.1652370	100.00	1
+17	0	3	16	0	0	0	0	-35.3632620	149.1652370	100.00	1
+18	0	3	16	0	0	0	0	-35.3632620	149.1707448	100.00	1
+
+# === SQUARE LAP 5 ===
+19	0	3	16	0	0	0	0	-35.3587704	149.1707448	100.00	1
+20	0	3	16	0	0	0	0	-35.3587704	149.1652370	100.00	1
+21	0	3	16	0	0	0	0	-35.3632620	149.1652370	100.00	1
+22	0	3	16	0	0	0	0	-35.3632620	149.1707448	100.00	1
+
+# WP23: Return home and loiter 5 turns with 100m radius
+# MAV_CMD_NAV_LOITER_TURNS (18): param1=5 turns, param3=100m radius
+23	0	3	18	5	0	100	0	-35.3632620	149.1652370	100.00	1
+
+# WP24: DO_LAND_START marker
+24	0	3	189	0	0	0	0	0	0	0	1
+
+# WP25: LOITER_TO_ALT farther south of home; descend to 10m before final
+# Use a smaller loiter radius to tighten the lineup before the landing staircase.
+25	0	3	31	1	60	0	0	-35.3695000	149.1652370	10.00	1
+
+# WP26: Long final approach waypoint at 4m, ~500m south of home
+26	0	3	16	0	0	0	0	-35.3677540	149.1652370	4.00	1
+
+# WP27: Mid-final approach waypoint at 2m, ~300m south of home
+27	0	3	16	0	0	0	0	-35.3659570	149.1652370	2.00	1
+
+# WP28: Short final approach waypoint at 1m, ~80m south of home
+28	0	3	16	0	0	0	0	-35.3639820	149.1652370	1.00	1
+
+# WP29: LAND at home
+29	0	3	21	0	0	0	0	-35.3632620	149.1652370	0.00	1

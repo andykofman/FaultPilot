@@ -1,0 +1,11 @@
+<?xml version="1.0" ?>
+<sdf version="1.7">
+  <world name="ambiguous_fixture">
+    <wind>
+      <linear_velocity>0 0 0</linear_velocity>
+    </wind>
+    <wind>
+      <linear_velocity>1 1 1</linear_velocity>
+    </wind>
+  </world>
+</sdf>

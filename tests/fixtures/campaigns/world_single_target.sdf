@@ -1,0 +1,15 @@
+<?xml version="1.0" ?>
+<sdf version="1.7">
+  <world name="wind_fixture">
+    <wind>
+      <linear_velocity>0 0 0</linear_velocity>
+    </wind>
+    <model name="nested_should_not_change">
+      <link name="link">
+        <wind>
+          <linear_velocity>9 9 9</linear_velocity>
+        </wind>
+      </link>
+    </model>
+  </world>
+</sdf>

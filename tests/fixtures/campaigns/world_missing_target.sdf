@@ -1,0 +1,10 @@
+<?xml version="1.0" ?>
+<sdf version="1.7">
+  <world name="missing_fixture">
+    <model name="nested_only">
+      <wind>
+        <linear_velocity>3 3 3</linear_velocity>
+      </wind>
+    </model>
+  </world>
+</sdf>

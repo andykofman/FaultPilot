@@ -3,28 +3,22 @@
 FaultPilot drives an ArduPilot SITL + Gazebo stack. Setup has three parts:
 the Python package, the third-party simulator sources, and the Gazebo plugin.
 
-## 1. Clone with submodules
-
-ArduPilot and the ArduPilot SITL_Models are pinned as git submodules under
-`third_party/`. Clone recursively:
+## 1. Clone FaultPilot
 
 ```bash
-git clone --recursive https://github.com/andykofman/FaultPilot.git
+git clone https://github.com/andykofman/FaultPilot.git
 cd FaultPilot
 ```
 
-Already cloned without `--recursive`:
+## 2. Clone the simulator dependencies
 
-```bash
-git submodule update --init --recursive
-```
+The ArduPilot stack, SITL_Models, and the Gazebo plugin are **not** vendored
+here — you clone them into `third_party/` yourself. Follow the walkthrough in
+[third_party/README.md](../third_party/README.md): it clones ArduPilot
+(`Plane-4.6.3`), SITL_Models, and `ardupilot_gazebo`, then builds the SITL
+binary and the Gazebo plugin.
 
-Pinned versions:
-
-- `third_party/ardupilot` — ArduPilot, tag `Plane-4.6.3`
-- `third_party/SITL_Models` — ArduPilot SITL_Models
-
-## 2. Python environment
+## 3. Python environment
 
 ```bash
 python3 -m venv env
@@ -41,30 +35,11 @@ Run the unit tests (no SITL required) to confirm the install:
 make test
 ```
 
-## 3. Gazebo plugin (required for live runs)
-
-Governed live runs use a **workspace-built** ArduPilot Gazebo system plugin and
-fail closed if it is missing — there is no installed-plugin fallback. The build
-output must land at:
-
-```
-build/ardupilot_gazebo/libArduPilotPlugin.so
-```
-
-Build the upstream plugin from `ArduPilot/ardupilot_gazebo` into that path, or
-point `GZ_SIM_SYSTEM_PLUGIN_PATH` at your build (`setup.bash` defaults it to
-`build/ardupilot_gazebo`).
-
-> **Airspeed lane note.** The `airspeed_failure` lane needs a Gazebo plugin
-> that publishes a simulated airspeed topic into ArduPilot. That sensor path is
-> **not** part of the upstream plugin and is **not** shipped in this repository.
-> The wind lane (`wind_matrix`) runs on the stock upstream plugin; the airspeed
-> lane is published here as a characterized case study with data, and its
-> custom plugin source is available on request.
-
 ## 4. Verify a live smoke run
 
-With the stack built, list cases without launching anything:
+The Gazebo plugin build (step 2) must land at
+`build/ardupilot_gazebo/libArduPilotPlugin.so` — governed runs fail closed
+without it. With the stack built, list cases without launching anything:
 
 ```bash
 faultpilot --help

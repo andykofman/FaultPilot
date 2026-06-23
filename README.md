@@ -1,6 +1,10 @@
-# FaultPilot
+<p align="center">
+  <img src="docs/assets/logo.png" alt="FaultPilot" width="300">
+</p>
 
-**Fault injection and behavior characterization for autopilots.**
+<h1 align="center">FaultPilot</h1>
+
+<p align="center"><strong>Fault injection and behavior characterization for autopilots.</strong></p>
 
 FaultPilot runs unattended fault-injection campaigns against ArduPilot SITL +
 Gazebo: it launches the simulation stack, flies the mission, injects a sensor

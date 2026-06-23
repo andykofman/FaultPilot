@@ -1,0 +1,110 @@
+{
+  "created_at_utc": "2026-06-11T08:51:12.797725+00:00",
+  "source_bin": "var/runs/airspeed_failure_behavior_ratio_bias_pulse_p10_to_p130_headwind_20260610T075155Z/_sitl_state/ratio_bias_pulse_p10_to_p130_headwind/attempt_001/logs/00000001.BIN",
+  "window_source": "var/analysis/airspeed_failure_pulse_ladder_bin_20260610T075155Z/bin_analysis_summary.json",
+  "analysis_window_trim_s": 5.0,
+  "airspeed_sensor_statustext_events": [
+    {
+      "t_s": 858.903,
+      "text": "Airspeed sensor 1 failure. Disabling"
+    },
+    {
+      "t_s": 903.003,
+      "text": "Airspeed sensor 1 now OK. Re-enabled"
+    },
+    {
+      "t_s": 909.603,
+      "text": "Airspeed sensor 1 failure. Disabling"
+    },
+    {
+      "t_s": 953.703,
+      "text": "Airspeed sensor 1 now OK. Re-enabled"
+    },
+    {
+      "t_s": 968.403,
+      "text": "Airspeed sensor 1 failure. Disabling"
+    },
+    {
+      "t_s": 1012.503,
+      "text": "Airspeed sensor 1 now OK. Re-enabled"
+    },
+    {
+      "t_s": 1079.403,
+      "text": "Airspeed sensor 1 failure. Disabling"
+    },
+    {
+      "t_s": 1123.503,
+      "text": "Airspeed sensor 1 now OK. Re-enabled"
+    },
+    {
+      "t_s": 1130.103,
+      "text": "Airspeed sensor 1 failure. Disabling"
+    },
+    {
+      "t_s": 1174.203,
+      "text": "Airspeed sensor 1 now OK. Re-enabled"
+    },
+    {
+      "t_s": 1194.903,
+      "text": "Airspeed sensor 1 failure. Disabling"
+    },
+    {
+      "t_s": 1239.003,
+      "text": "Airspeed sensor 1 now OK. Re-enabled"
+    },
+    {
+      "t_s": 1245.603,
+      "text": "Airspeed sensor 1 failure. Disabling"
+    },
+    {
+      "t_s": 1289.703,
+      "text": "Airspeed sensor 1 now OK. Re-enabled"
+    },
+    {
+      "t_s": 1310.403,
+      "text": "Airspeed sensor 1 failure. Disabling"
+    },
+    {
+      "t_s": 1354.503,
+      "text": "Airspeed sensor 1 now OK. Re-enabled"
+    },
+    {
+      "t_s": 1361.103,
+      "text": "Airspeed sensor 1 failure. Disabling"
+    },
+    {
+      "t_s": 1405.203,
+      "text": "Airspeed sensor 1 now OK. Re-enabled"
+    },
+    {
+      "t_s": 1427.403,
+      "text": "Airspeed sensor 1 failure. Disabling"
+    },
+    {
+      "t_s": 1471.503,
+      "text": "Airspeed sensor 1 now OK. Re-enabled"
+    },
+    {
+      "t_s": 1535.403,
+      "text": "Airspeed sensor 1 failure. Disabling"
+    },
+    {
+      "t_s": 1579.503,
+      "text": "Airspeed sensor 1 now OK. Re-enabled"
+    },
+    {
+      "t_s": 1650.603,
+      "text": "Airspeed sensor 1 failure. Disabling"
+    },
+    {
+      "t_s": 1694.703,
+      "text": "Airspeed sensor 1 now OK. Re-enabled"
+    }
+  ],
+  "notes": [
+    "Raw analysis package only; not curated evidence.",
+    "ARSP.TR is the EKF consistency test ratio compared against ARSPD_WIND_GATE=5 (ARSPD_OPTIONS=11 includes bit 3).",
+    "Adds the ARSP U/H/Hp/TR fields omitted from the 20260610 pulse package; window boundaries identical."
+  ],
+  "generator": "var/analysis/airspeed_failure_pulse_ladder_health_20260611T000000Z/generate_pulse_health_summary.py"
+}

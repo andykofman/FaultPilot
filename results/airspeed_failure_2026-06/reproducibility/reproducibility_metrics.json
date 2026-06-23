@@ -1,0 +1,165 @@
+{
+  "source_bins": {
+    "p100": "var/runs/airspeed_failure_behavior_ratio_bias_ramp_p10_to_p100_headwind_20260610T111134Z/_sitl_state/ratio_bias_ramp_p10_to_p100_headwind/attempt_001/logs/00000001.BIN",
+    "p200": "var/runs/airspeed_failure_behavior_ratio_bias_ramp_p10_to_p200_headwind_20260610T122611Z/_sitl_state/ratio_bias_ramp_p10_to_p200_headwind/attempt_001/logs/00000001.BIN"
+  },
+  "overlap_biases": [
+    0,
+    10,
+    20,
+    30,
+    40,
+    50,
+    60,
+    70,
+    80,
+    90,
+    100
+  ],
+  "metrics": [
+    {
+      "metric": "reported_arsp_mean",
+      "mean_abs_delta": 0.004438153763596666,
+      "max_abs_delta": 0.01834825771694426,
+      "signed_mean_delta": -0.0013903087219051132,
+      "p100_range": 9.788854391661337,
+      "relative_to_p100_range": 0.00045338847489419395
+    },
+    {
+      "metric": "true_sim2_as_mean",
+      "mean_abs_delta": 0.0032188697436332995,
+      "max_abs_delta": 0.0076696523606969436,
+      "signed_mean_delta": -0.0014856392849531956,
+      "p100_range": 2.70645936102267,
+      "relative_to_p100_range": 0.0011893286815941727
+    },
+    {
+      "metric": "groundspeed_gps_mean",
+      "mean_abs_delta": 0.0034088482378550433,
+      "max_abs_delta": 0.01003745254059396,
+      "signed_mean_delta": -0.0021779787643012583,
+      "p100_range": 2.735989804053723,
+      "relative_to_p100_range": 0.001245928706607164
+    },
+    {
+      "metric": "rel_alt_mean",
+      "mean_abs_delta": 0.00949237492712417,
+      "max_abs_delta": 0.032999569831659414,
+      "signed_mean_delta": 0.0025790778880279545,
+      "p100_range": 14.462795609690204,
+      "relative_to_p100_range": 0.000656330572822601
+    },
+    {
+      "metric": "rel_alt_min",
+      "mean_abs_delta": 0.09283655340021307,
+      "max_abs_delta": 0.377777099609375,
+      "signed_mean_delta": -0.017993580211292614,
+      "p100_range": 15.829139709472656,
+      "relative_to_p100_range": 0.005864914651341206
+    },
+    {
+      "metric": "tecs_throttle_mean",
+      "mean_abs_delta": 0.0001629762253864333,
+      "max_abs_delta": 0.00037376850462489397,
+      "signed_mean_delta": -7.906636072767133e-05,
+      "p100_range": 0.13265013692221572,
+      "relative_to_p100_range": 0.001228617091303874
+    },
+    {
+      "metric": "att_des_pitch_mean",
+      "mean_abs_delta": 0.01532717141745832,
+      "max_abs_delta": 0.06285030161874161,
+      "signed_mean_delta": 0.003691212870426933,
+      "p100_range": 16.546134796660493,
+      "relative_to_p100_range": 0.0009263294180675843
+    },
+    {
+      "metric": "att_pitch_mean",
+      "mean_abs_delta": 0.024852725024227838,
+      "max_abs_delta": 0.05602811431636745,
+      "signed_mean_delta": 0.013871246565222444,
+      "p100_range": 2.932433729421927,
+      "relative_to_p100_range": 0.008475119070850095
+    },
+    {
+      "metric": "aetr_elev_mean",
+      "mean_abs_delta": 3.038186246846594,
+      "max_abs_delta": 8.183929441768669,
+      "signed_mean_delta": 0.8997299987057555,
+      "p100_range": 1607.9480944978568,
+      "relative_to_p100_range": 0.0018894802992974618
+    },
+    {
+      "metric": "rcou_c2_mean",
+      "mean_abs_delta": 0.12917350810678066,
+      "max_abs_delta": 0.38326930704306506,
+      "signed_mean_delta": 0.03510712753828474,
+      "p100_range": 71.40626453475988,
+      "relative_to_p100_range": 0.0018089940560313197
+    },
+    {
+      "metric": "rcou_c3_mean",
+      "mean_abs_delta": 0.1360060016044868,
+      "max_abs_delta": 0.2723638619290796,
+      "signed_mean_delta": -0.06927882820698207,
+      "p100_range": 106.1195741265667,
+      "relative_to_p100_range": 0.0012816297344189788
+    },
+    {
+      "metric": "aoa_mean",
+      "mean_abs_delta": 0.015046557442057134,
+      "max_abs_delta": 0.03261732109163917,
+      "signed_mean_delta": 0.014938897322355387,
+      "p100_range": 2.880019156727485,
+      "relative_to_p100_range": 0.0052244643605615015
+    },
+    {
+      "metric": "aoa_std",
+      "mean_abs_delta": 0.03400536294522796,
+      "max_abs_delta": 0.12504545012073476,
+      "signed_mean_delta": -0.0012271641720920227,
+      "p100_range": 1.2754604917373282,
+      "relative_to_p100_range": 0.02666124365711135
+    },
+    {
+      "metric": "ssa_mean",
+      "mean_abs_delta": 0.00863228482708056,
+      "max_abs_delta": 0.021167720733732298,
+      "signed_mean_delta": -0.002031035282123525,
+      "p100_range": 0.9167018687316189,
+      "relative_to_p100_range": 0.009416676371593411
+    },
+    {
+      "metric": "arsp_tr_mean",
+      "mean_abs_delta": 0.003815270683518383,
+      "max_abs_delta": 0.010300566302852698,
+      "signed_mean_delta": -0.002686038274659688,
+      "p100_range": 0.44847841145592227,
+      "relative_to_p100_range": 0.008507144571647588
+    },
+    {
+      "metric": "arsp_tr_max",
+      "mean_abs_delta": 0.03204652125185186,
+      "max_abs_delta": 0.09463894367218018,
+      "signed_mean_delta": -0.015150831504301592,
+      "p100_range": 1.4306663870811462,
+      "relative_to_p100_range": 0.022399716342838917
+    },
+    {
+      "metric": "reported_minus_true_mps",
+      "mean_abs_delta": 0.003387677442884848,
+      "max_abs_delta": 0.010678605356247317,
+      "signed_mean_delta": 9.533056304808244e-05,
+      "p100_range": 12.448073587718888,
+      "relative_to_p100_range": 0.0002721447153258387
+    },
+    {
+      "metric": "true_minus_gps_mps",
+      "mean_abs_delta": 0.0009058866368855819,
+      "max_abs_delta": 0.0023692965082844353,
+      "signed_mean_delta": 0.0006923394793480627,
+      "p100_range": 0.03930134462162993,
+      "relative_to_p100_range": 0.023049761925626768
+    }
+  ]
+}

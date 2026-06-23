@@ -1,0 +1,29 @@
+{
+  "created_at_utc": "2026-06-11T08:49:52.998816+00:00",
+  "notes": [
+    "Raw analysis package only; not curated evidence.",
+    "Full signed sweep: positive p10..p100 plus negative m10..m50.",
+    "Averages use accepted_observation=true attempts from each manifest.json.",
+    "p100 has accepted_n=2 because attempt_002 failed pre-injection.",
+    "Source metrics are MAVLink-derived attempt artifacts (VFR_HUD/GLOBAL_POSITION_INT), not BIN-derived.",
+    "m40 loss_of_control_or_timeout rows are monitor low-altitude aborts (<15 m AGL) after 'Airspeed sensor 1 failure. Disabling'."
+  ],
+  "source_roots": [
+    "var/runs/airspeed_failure_behavior_ratio_p10_20260608T121445Z",
+    "var/runs/airspeed_failure_behavior_ratio_p20_20260608T124125Z",
+    "var/runs/airspeed_failure_behavior_ratio_p30_20260608T125821Z",
+    "var/runs/airspeed_failure_behavior_ratio_p40_20260608T142724Z",
+    "var/runs/airspeed_failure_behavior_ratio_p50_20260608T144048Z",
+    "var/runs/airspeed_failure_behavior_ratio_p60_20260608T145338Z",
+    "var/runs/airspeed_failure_behavior_ratio_p70_20260608T150628Z",
+    "var/runs/airspeed_failure_behavior_ratio_p80_20260608T151917Z",
+    "var/runs/airspeed_failure_behavior_ratio_p90_20260608T153204Z",
+    "var/runs/airspeed_failure_behavior_ratio_p100_20260608T154448Z",
+    "var/runs/airspeed_failure_behavior_ratio_m10_20260609T103836Z",
+    "var/runs/airspeed_failure_behavior_ratio_m20_20260609T104931Z",
+    "var/runs/airspeed_failure_behavior_ratio_m30_20260609T110035Z",
+    "var/runs/airspeed_failure_behavior_ratio_m40_20260609T111108Z",
+    "var/runs/airspeed_failure_behavior_ratio_m50_20260609T111832Z"
+  ],
+  "generator": "var/analysis/airspeed_failure_ratio_sweep_full_20260611T000000Z/generate_full_sweep_summary.py"
+}

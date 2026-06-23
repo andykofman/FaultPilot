@@ -1,0 +1,20 @@
+{
+  "created_at_utc": "2026-06-09T07:41:09.850019+00:00",
+  "notes": [
+    "Raw analysis package only; not curated evidence.",
+    "Averages use accepted_observation=true attempts from manifest.json.",
+    "p100 currently has accepted_n=2 because attempt_002 is incomplete/non-counting."
+  ],
+  "source_roots": [
+    "var/runs/airspeed_failure_behavior_ratio_p10_20260608T121445Z",
+    "var/runs/airspeed_failure_behavior_ratio_p20_20260608T124125Z",
+    "var/runs/airspeed_failure_behavior_ratio_p30_20260608T125821Z",
+    "var/runs/airspeed_failure_behavior_ratio_p40_20260608T142724Z",
+    "var/runs/airspeed_failure_behavior_ratio_p50_20260608T144048Z",
+    "var/runs/airspeed_failure_behavior_ratio_p60_20260608T145338Z",
+    "var/runs/airspeed_failure_behavior_ratio_p70_20260608T150628Z",
+    "var/runs/airspeed_failure_behavior_ratio_p80_20260608T151917Z",
+    "var/runs/airspeed_failure_behavior_ratio_p90_20260608T153204Z",
+    "var/runs/airspeed_failure_behavior_ratio_p100_20260608T154448Z"
+  ]
+}

@@ -1,0 +1,117 @@
+{
+  "evidence_id": "airspeed_failure_behavior_2026-06-11",
+  "created_at_utc": "2026-06-11T08:53:39+00:00",
+  "scope": "Interim curated analysis package for the airspeed_failure behavior lane: signed ratio-bias sweep, headwind pulse ladder, headwind stepped ramps (+100, +200), and +100-vs-+200 overlap reproducibility.",
+  "report": "REPORT.md",
+  "files": [
+    {
+      "file": "ratio_sweep/bias_summary_positive.csv",
+      "sha256": "da7c47702dccc409a311dcf40bbca05f25539454bb90716ac6e87684350c48de"
+    },
+    {
+      "file": "ratio_sweep/analysis_metadata_positive.json",
+      "sha256": "7b2dd1c2b9ee2dcbe3c545b4682c068609d3b0f6d7140510de66b39df19b20b4"
+    },
+    {
+      "file": "ratio_sweep/bias_summary_full.csv",
+      "sha256": "4a5cdcb27c922e1d41245540365ba0263bddd242ade57af17e42afd4c8cf23dd"
+    },
+    {
+      "file": "ratio_sweep/accepted_attempts_full.csv",
+      "sha256": "1e0e1b69794a3c0ff72b040345290c6ed938445f2e92ce863cb55094ad9e7b2b"
+    },
+    {
+      "file": "ratio_sweep/analysis_metadata_full.json",
+      "sha256": "8843244c80142eca0546bcf9229b7f4837277696b48fb14b5206c6f9582e975a"
+    },
+    {
+      "file": "ratio_sweep/speed_means_by_bias.png",
+      "sha256": "4ad06f25b8354956d0f5edf60f372b64714d93d6592590d2ede253f98e1d31ec"
+    },
+    {
+      "file": "ratio_sweep/altitude_loss_by_bias.png",
+      "sha256": "63d09fe70793cda35d58c72dc04676c8b02fba1da7fdeca66868ec96836a9d65"
+    },
+    {
+      "file": "ratio_sweep/behavior_classes_by_bias.png",
+      "sha256": "98b3432bad77e23ab44e5bc5dc39efcf2b9767fbbf6a120e94cb932419f24a02"
+    },
+    {
+      "file": "pulse_ladder/phase_windows_bin_summary.csv",
+      "sha256": "1a965a6f9873fdac2d93ec4c59143d78fa2850fc640867a820bcb77f668637f0"
+    },
+    {
+      "file": "pulse_ladder/baseline_fault_pairs_bin_summary.csv",
+      "sha256": "049c6960cf7879a9615d0e4c88c9054b3bd52c94666db0e9faf973b070f5b940"
+    },
+    {
+      "file": "pulse_ladder/pulse_window_health_summary.csv",
+      "sha256": "39494ec877c0b1811179a5b1bd87e9d2144c7a687a7354c58bc40a582bb8228e"
+    },
+    {
+      "file": "pulse_ladder/health_analysis_metadata.json",
+      "sha256": "68b9972a3803bd339b286d77130e61ec9da6c6febaeb672240ed6ecd1b2b7498"
+    },
+    {
+      "file": "pulse_ladder/bin_fault_window_summary.png",
+      "sha256": "cc9cc89ffb03b5f32aeadd1a74f13e2e116d068f3e358002ef9bb5f63b17b4c6"
+    },
+    {
+      "file": "pulse_ladder/bin_time_series_overview.png",
+      "sha256": "e6b856c2e9d9917a328b2931dad6205fb69dc93930952e7389b288258b65b5a5"
+    },
+    {
+      "file": "ramp_p100/window_summary.csv",
+      "sha256": "f43f889f975b94341d023de8d111a8ed6a29c9aaf5c1285b379b12546cd6adf7"
+    },
+    {
+      "file": "ramp_p100/bin_timeline.png",
+      "sha256": "8bf16bc99398f0d17b17dd80ea4aa1aba0322d20e2b3ecbcb359a0b05bf6dcb7"
+    },
+    {
+      "file": "ramp_p100/speeds_altitude_sensor_state.png",
+      "sha256": "17dd18281b01f85765a192b6f220dea5d67e0af30d7f29b42a9f257622902bb1"
+    },
+    {
+      "file": "ramp_p100/tecs_elevator_pitch_response.png",
+      "sha256": "0553c5a3862b86742847f55f54cafd6bfc097d743854b64088a6d1cad14737f9"
+    },
+    {
+      "file": "ramp_p200/window_summary.csv",
+      "sha256": "76d61a6080d8977538145d85529d157b844143f6759062d95a43e12cd896aecf"
+    },
+    {
+      "file": "ramp_p200/compare_to_p100_run.csv",
+      "sha256": "b6919ce0db88ea65a231e68c6aee571de3e6201f51f0664447fe9d5400eefc49"
+    },
+    {
+      "file": "ramp_p200/speeds_altitude_sensor_state.png",
+      "sha256": "e75e8509b1d0d9937313eaf93a9ed4802c3dd7a20c0faf91535c78024f1f6549"
+    },
+    {
+      "file": "ramp_p200/energy_altitude_bias_signature.png",
+      "sha256": "11e649310d6316c2dc8841313caf0e7b66ba98004e5263ffc6e9be9d1aca4b31"
+    },
+    {
+      "file": "ramp_p200/tecs_elevator_pitch_response.png",
+      "sha256": "911d6e9827e6b9cec3e4d37c2913ff60085d8fd0b3edd265fe336361ea1584ff"
+    },
+    {
+      "file": "reproducibility/reproducibility_metrics.json",
+      "sha256": "473e5a67392a91b338d19dab7127f0f031929737d95ff8c89441ac436ef3e308"
+    },
+    {
+      "file": "reproducibility/overlap_comparison_with_aoa.csv",
+      "sha256": "6620d0595f55b7cf837ccc3b10c87c62554dbd813103c6425eb21179c58b51b7"
+    },
+    {
+      "file": "reproducibility/overlap_reproducibility_with_aoa.png",
+      "sha256": "71ee1860e447db4c047bd2eb3a983293e3143f8f4ca04ecf29eb853f927ef7a5"
+    },
+    {
+      "file": "reproducibility/overlap_delta_with_aoa.png",
+      "sha256": "0dceab3f8c3a2eba8910bd177d58b55cee489b11ae5f49e1ab190734227a98a6"
+    }
+  ],
+  "raw_data_note": "Raw .BIN logs and run trees are not shipped; the CSV/JSON/PNG artifacts here plus REPORT.md are the reviewed proof."
+}
